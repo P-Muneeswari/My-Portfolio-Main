@@ -232,7 +232,7 @@ export const purpleThemeLight = {
     primary50: '#823ae080',
     primary30: '#823ae04d',
     secondary: '#eaeaea',
-    secondary70: '#eaeaeab3',
+    secondary70: '#0b0202b3',
     secondary50: '#eaeaea80',
     tertiary: '#212121',
     tertiary80: '#212121cc',
