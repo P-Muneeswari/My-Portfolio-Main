@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
 
-import './BlogPage.css'
+import './CombatChroniclesPage.css'
 import { SingleBlog } from '../../components'
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { blogData } from '../../data/blogData'
+import { blogData } from '../../data/Combat_Chronicles'
 import { headerData } from '../../data/headerData'
 
-function BlogPage() {
+function CombatChroniclesPage() {
 
     const [search, setSearch] = useState('')
     const { theme } = useContext(ThemeContext);
@@ -69,22 +69,22 @@ function BlogPage() {
     const classes = useStyles();
 
     return (
-        <div className="blogPage" style={{backgroundColor: theme.secondary}}>
+        <div className="combatChroniclesPage" style={{backgroundColor: theme.secondary}}>
             <Helmet>
-                <title>{headerData.name} | Blog</title>
+                <title>{headerData.name} | Combat Chronicles</title>
             </Helmet>
-            <div className="blogPage--header" style={{backgroundColor: theme.primary}}>
+            <div className="combatChroniclesPage--header" style={{backgroundColor: theme.primary}}>
                 <Link to="/">
                     <AiOutlineHome className={classes.home}/>
                 </Link>
-                <h1 style={{color: theme.secondary}}>Blogs</h1>
+                <h1 style={{color: theme.secondary}}>Combat Chronicles</h1>
             </div>
-            <div className="blogPage--container">
-                <div className="blog--search">
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
+            <div className="combatChroniclesPage--container">
+                <div className="combatChronicles--search">
+                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search combat stories..." className={classes.search}/>
                 </div>
-                <div className="blogs--container">
-                    <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">
+                <div className="combatChronicles--container">
+                    <Grid className="combatChronicles-grid" container direction="row" alignItems="center" justifyContent="center">
                         {filteredArticles.reverse().map(blog => (
                             <SingleBlog 
                                 theme={theme}
@@ -104,4 +104,4 @@ function BlogPage() {
     )
 }
 
-export default BlogPage
+export default CombatChroniclesPage

@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { HiArrowRight } from "react-icons/hi";
 
-import './Blog.css';
+import './Combat_Chronicles.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { blogData } from '../../data/blogData'
 import SingleBlog from './SingleBlog/SingleBlog';
 
-
-function Blog() {
+function Combat_Chronicles() {
 
     const { theme } = useContext(ThemeContext);
 
@@ -43,12 +42,12 @@ function Blog() {
     return (
         <>
             {blogData.length > 0 && (
-                <div className="blog" id="blog" style={{backgroundColor: theme.secondary}}>
-                    <div className="blog--header">
-                        <h1 style={{color: theme.primary}}>Blog</h1>
+                <div className="combatChronicles" id="combatChronicles" style={{backgroundColor: theme.secondary}}>
+                    <div className="combatChronicles--header">
+                        <h1 style={{color: theme.primary}}>Combat Chronicles </h1>
                     </div>
-                    <div className="blog--body">
-                        <div className="blog--bodyContainer">
+                    <div className="combatChronicles--body">
+                        <div className="combatChronicles--bodyContainer">
                             {blogData.slice(0, 3).reverse().map(blog => (
                                 <SingleBlog 
                                     theme={theme}
@@ -64,8 +63,8 @@ function Blog() {
                         </div> 
 
                         {blogData.length > 3 && (
-                            <div className="blog--viewAll">
-                                <Link to="/blog">
+                            <div className="combatChronicles--viewAll">
+                                <Link to="/combat-chronicles">
                                     <button className={classes.viewAllBtn}>
                                         View All
                                         <HiArrowRight className={classes.viewArr} />
@@ -81,4 +80,4 @@ function Blog() {
     )
 }
 
-export default Blog
+export default Combat_Chronicles

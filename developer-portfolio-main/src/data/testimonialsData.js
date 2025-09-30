@@ -11,45 +11,33 @@ import boy3 from '../assets/svg/testimonials/boy3.svg'
 export const testimonialsData = [
     {
         id: 1,
-        name: 'Chandler Bing',
-        title: 'Transponster',
-        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
+        name: 'Master RK',
+        title: 'Karate & GYmnastics Master',
+        text: "I have had the privilege of being guided by Master RK, a dedicated mentor and visionary leader. His discipline, motivation, and commitment to excellence have shaped my journey and inspired me to strive for continuous growth. As the organizer of the Flying Squad, he instills teamwork, integrity, and leadership qualities that leave a lasting impact on everyone he mentors.",
         image: boy2
     },
     {
         id: 2,
-        name: 'Monica Geller',
-        title: 'Head Chef',
-        text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
+        name: 'Mrs.A. Anantha Kumari',
+        title: 'Proffesor',
+        text: "I am grateful for the guidance and encouragement of Madam Ananthakumari, whose constant support and inspiration have strengthened my journey. Her dedication, wisdom, and nurturing approach have played a vital role in shaping my skills and character, motivating me to aim higher with confidence and perseverance.",
         image: girl2
     },
     {
         id: 3,
-        name: 'Phoebe Buffay',
-        title: 'Massuese',
-        text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
+        name: 'Ms.M.Jeya Gowri',
+        title: 'My Friend',
+        text: "Jeya Gowri is my closest friend from college and continues to stand by me till today. Her constant support, understanding, and encouragement have made my college journey truly memorable. She is more than a friend—she is like a sister, always adding strength and joy to my life.",
         image: girl1
     },
-    {
-        id: 4,
-        name: 'Joey Tribbiani',
-        title: 'Actor',
-        text: "Making my portfolio with this helped me get my role as 'Dr. Drake Ramoray' in 'Days Of Our Lives'. You guys are the best !",
-        image: boy1
-    },
+    
     {
         id: 5,
-        name: 'Rachel Green',
-        title: 'Sales Executive',
-        text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
+        name: 'Mrs.Fancy Helena',
+        title: '9th-12th Teacher',
+        text: "Miss Fancy Helena, my teacher from 9th to 12th grade, holds a very special place in my heart. Her dedication to teaching, patience, and constant encouragement inspired me to believe in myself and work hard towards my goals. She was more than a teacher—she was a mentor and a guiding light, shaping both my knowledge and character with care and kindness.",
         image: girl3
     },
-    {
-        id: 6,
-        name: 'Ross Geller',
-        title: 'Paleontologist',
-        text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
-        image: boy3
-    }
+    
 ]
 

@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
+import { BiShoppingBag, BiPencil, BiRocket } from "react-icons/bi";
 import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
 import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
 import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
@@ -21,6 +21,11 @@ export const servicesData = [
         id: 3,
         title: 'Email Marketing',
         icon: <AiOutlineMail />
+    },
+    {
+        id: 14,
+        title: 'CI/CD Pipe-Line',
+        icon: <FaInternetExplorer/>
     },
     // {
     //     id: 4,
@@ -53,11 +58,11 @@ export const servicesData = [
         title: 'Video Editing',
         icon: <FaVideo />
     },
-    // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
-    // },
+    {
+         id: 10,
+         title: 'Data Entry', 
+         icon: <BsClipboardData />
+    },
     {
         id: 11,
         title: 'Ebook Writing',
@@ -70,7 +75,7 @@ export const servicesData = [
     // },
     {
         id: 13,
-        title: 'Blog Posting',
+        title: 'Gymanstics & Karate Mentor',
         icon: <FaRegNewspaper />
     },
 
